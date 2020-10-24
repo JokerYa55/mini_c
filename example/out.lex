@@ -1,0 +1,16 @@
+{"value":"{","type":"LBRA"}
+{"value":"aa","type":"IDENT"}
+{"value":"\u003d","type":"EQUAL"}
+{"value":"5","type":"NUM"}
+{"value":";","type":"SEMICOLON"}
+{"value":"bb","type":"IDENT"}
+{"value":"\u003d","type":"EQUAL"}
+{"value":"10","type":"NUM"}
+{"value":";","type":"SEMICOLON"}
+{"value":"cc","type":"IDENT"}
+{"value":"\u003d","type":"EQUAL"}
+{"value":"aa","type":"IDENT"}
+{"value":"+","type":"PLUS"}
+{"value":"bb","type":"IDENT"}
+{"value":";","type":"SEMICOLON"}
+{"value":"}","type":"RBRA"}
