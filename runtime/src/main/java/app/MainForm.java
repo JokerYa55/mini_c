@@ -42,6 +42,8 @@ public class MainForm extends javax.swing.JFrame {
         CodeList = new javax.swing.JList<>();
         jScrollPane5 = new javax.swing.JScrollPane();
         StackList = new javax.swing.JList<>();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
         jSeparator1 = new javax.swing.JSeparator();
         jSplitPane3 = new javax.swing.JSplitPane();
         jScrollPane6 = new javax.swing.JScrollPane();
@@ -113,6 +115,15 @@ public class MainForm extends javax.swing.JFrame {
         jScrollPane5.setViewportView(StackList);
 
         jSplitPane1.setRightComponent(jScrollPane5);
+
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(jList1);
+
+        jSplitPane1.setRightComponent(jScrollPane1);
 
         OutputMessages.setColumns(20);
         OutputMessages.setLineWrap(true);
@@ -329,6 +340,8 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenu helpMenu;
     private javax.swing.JButton jButton1;
+    private javax.swing.JList<String> jList1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
